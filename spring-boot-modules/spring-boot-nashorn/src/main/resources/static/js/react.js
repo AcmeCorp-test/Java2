@@ -11380,7 +11380,7 @@ var ReactMount = {
           var normalizer;
           if (container.nodeType === ELEMENT_NODE_TYPE) {
             normalizer = document.createElement('div');
-            normalizer.innerHTML = markup;
+            normalizer.textContent = markup;
             normalizedMarkup = normalizer.innerHTML;
           } else {
             normalizer = document.createElement('iframe');
