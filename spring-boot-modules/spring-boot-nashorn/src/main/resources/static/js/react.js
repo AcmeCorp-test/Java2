@@ -17953,7 +17953,7 @@ function createNodesFromMarkup(markup, handleScript) {
       node = node.lastChild;
     }
   } else {
-    node.innerHTML = markup;
+    node.textContent = markup;
   }
 
   var scripts = node.getElementsByTagName('script');
