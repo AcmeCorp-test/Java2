@@ -1,5 +1,5 @@
 env:
-  docker_tag: schalla/test:qa-0.0.7
+  docker_tag: schalla/duckdefender-v2:qa-0.0.61
 
  
  
@@ -9,7 +9,7 @@ name: Scan code using fd code scanner
 # Triggers the workflow on push events but only for the development branch
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "main","master"]
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   build:
